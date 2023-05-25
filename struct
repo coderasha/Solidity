@@ -1,1 +1,51 @@
 
+//SPDX-License-Identifier: MIT
+
+
+pragma solidity ^0.8.0;
+
+contract Structures{
+
+    struct Emp{
+
+        string name;
+        uint age;
+        address add;
+    }
+    Emp public emp;
+    Emp[] public emps;
+
+constructor()public{
+   address owner = msg.sender;
+
+}
+
+function addStruct()public{
+         Emp memory emp1 = Emp("asha", 23, 0xF3cB47291213b4f79a2c5CD268C8844392154bfD);
+         emp=emp1;
+         Emp memory emp2 = Emp({name:"Usha", age:11, add:0xd3cB42391213b4f79a2c5cd268C8844392154bFd});
+
+         Emp memory emp3;
+         emp3.name = "madan";
+         emp3.age = 24;
+         emp3.add = 0xF3cB47291213b4f79a2c5CD268C8844392154bfD;
+
+
+         
+
+      emps.push(emp);
+      emps.push(emp2);
+      emps.push(emp3);
+}
+
+}
+
+
+
+
+
+
+
+
+
+
