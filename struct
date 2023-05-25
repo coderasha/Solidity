@@ -36,6 +36,7 @@ function addStruct()public{
       emps.push(emp);
       emps.push(emp2);
       emps.push(emp3);
+      emps.push(Emp("lal",34 ,0xF3cB47291213b4f79a2c5CD268C8844392154bfD));
 }
 
 }
