@@ -6,12 +6,7 @@ pragma solidity ^0.8.0;
 
 contract iLoop{
 
-//  uint[5] public arr;
 
-//  function carray() public pure{
-//     uint[] memory narr = new uint[](4);
-//     narr[1]=13;
-//      }
 function getETH() payable public {
 
 }
