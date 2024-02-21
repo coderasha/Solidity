@@ -27,17 +27,14 @@ pragma solidity ^0.8.0;
 
 contract iLoop{
 uint[3] public arr;
-uint  count;
+uint count;
 
 function loop() public{
-while(count < arr.length){
+for (count = 0 ; count< arr.length ; count++){
 arr[count] = count ;
-count++
-}
-
 
 }
+}
 
- 
 
 }
