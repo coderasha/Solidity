@@ -1,1 +1,17 @@
+pragma solidity ^0.8.0;
 
+struct Employee{
+        string name;
+        uint id;
+}
+contract SalEmp{
+mapping(uint =>Employee) public salary;
+
+function updateSal( uint _salary, string memory _name , uint _id)public{
+        salary[_salary]=Employee(_name,_id);
+
+}
+
+
+
+}
