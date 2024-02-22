@@ -6,7 +6,8 @@ contract random{
 
     uint  public randNum ;
 function generateRand()public returns(uint){
-   
+    randNum = uint (keccak256(abi.encodePacked(msg.sender, block.timestamp, randNum)))%1000;
+    return randNum;
 }
 
 }
